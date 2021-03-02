@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head><title>Post</title>
+	<style>
+	form{
+         width:50%;
+         margin:auto;
+
+		}
+.form-input{
+            display: inline-block;
+			width: 100%;
+			height: 2rem;
+		}
+.form-textarea{
+		display: inline-block;
+		width: 100%;
+		height: 4rem;
+		font: inherit;
+		}
+.btn {
+       display: inline-block;
+       padding: 0.25rem 1rem;
+       text-decoration: none;
+       font: inherit;
+       border: 1px solid #00695c;
+       color: #00695c;
+       background: white;
+       border-radius: 3px;
+       cursor: pointer;
+       float: right;
+}
+	</style>
+	</head>
+	<body>
+		<a href="/" class="btn">All Blogs</a>
+		<form method="post" action="/add-blog">
+			<h3>Create Blog</h3>
+			<label>Title</label>
+			<input type="text" class="form-input" name="title">
+			<label>Description</label>
+			<textarea  name="description" class="form-textarea"></textarea>
+			<label>Author</label>
+			<input type="text" name="author" class="form-input">
+			<input type="submit" value="submit" class="btn">
+		</form>
+	</body>
+	</html>

@@ -1,0 +1,12 @@
+const express=require('express');
+const router=express.Router();
+const blogController=require('../controller/blogController');
+router.get('/',blogController.getAddBlog);
+router.get('/all',blogController.getAllBlogs);
+router.get('/add-blog',blogController.getAddBlog);
+router.post('/add-blog',blogController.postAddBlog);
+router.post('/author-search',blogController.postAuthorSearch);
+router.get('/edit-blog/:blogID',blogController.getEditBlog);
+router.post('/edit-blog',blogController.postEditBlog);
+router.get('/delete-blog/:blogID',blogController.deleteBlog);
+module.exports = router;
